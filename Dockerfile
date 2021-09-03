@@ -5,7 +5,7 @@ RUN apt update &&\
 apt-get -y update &&\
 apt-get -y upgrade &&\
 apt-get -y install apache2
-RUN apt-get -y install apt-transport-https git
+RUN apt-get -y install apt-transport-https 
 
 #Install PHP
 RUN apt-get -y install php git \
