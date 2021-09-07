@@ -1,0 +1,3 @@
+[submodule "OSTicket_bin"]
+	path = OSTicket_bin
+	url = https://github.com/HectorQuiroz/OSTicket_bin.git
