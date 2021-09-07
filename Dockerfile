@@ -21,6 +21,7 @@ RUN chown -R www-data:www-data /var/www/*
 #Configurar APACHE
 RUN rm -rf /etc/apache2/*
 COPY Apache_config/ /etc/apache2/
+RUN rm Apache_config/ -rf
 #RUN /etc/init.d/apache2 start
 
 ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
