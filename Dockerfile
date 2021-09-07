@@ -17,6 +17,7 @@ php-fpm php-pear php-imap php-apcu php-intl php-cgi php-common php-mbstring php-
 RUN mkdir /var/www/osTicket
 COPY ./osTicket/ /var/www/osTicket/
 RUN chown -R www-data:www-data /var/www/*
+RUN rm osTicket/ -rf
 
 #Configurar APACHE
 RUN rm -rf /etc/apache2/*
